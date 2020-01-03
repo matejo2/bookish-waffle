@@ -1,0 +1,23 @@
+<p>
+  connector works!
+</p>
+<br>
+<br>
+<div>
+  <button (click)="getAllUsers()">get all users</button>
+  <ul>
+    <li *ngFor="let user of users">
+      <span>Name: {{user.name}} Id: {{user.id}}</span>
+    </li>
+  </ul>
+</div>
+<br>
+<div>
+  <input #userName placeholder="Enter a user name" type="text" value="">
+  <button (click)="createUser(userName.value)">save user</button>
+</div>
+<br>
+<div>
+  <input #userId type="number" value="" placeholder="Enter a id">
+  <button (click)="deleteUser(userId.value) //noinspection ValidateTypes">delete user</button>
+</div>

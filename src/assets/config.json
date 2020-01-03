@@ -1,0 +1,4 @@
+{
+  "requestUrl": "http://localhost:8080/users",
+  "textfile": "assets/textfile.txt"
+}
